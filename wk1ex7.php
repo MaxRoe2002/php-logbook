@@ -4,7 +4,8 @@
 	$hourlyrate	= 5.75;
 	$hoursperweek = 40;
 	$gross = $hourlyrate * $hoursperweek;
-	echo $gross;
+	$aftertax = $gross - ($gross * 0.22);
+	echo $aftertax;
 ?>
 </body>
 </html>
