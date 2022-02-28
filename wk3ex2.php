@@ -7,7 +7,7 @@
   {
 	echo "You are  21 years old or over<br/>";
   }
-  if($_POST("male") ==true)
+  if($_POST("gender") = male)
   {
       echo "You are a Male<br/>";
   }
