@@ -5,14 +5,15 @@
   }
   else
   {
-	echo "You are  21 years old or over<br/>";
+	echo "You are 21 years old or over<br/>";
   }
-  if($_POST("gender") = male)
+
+  if ($_POST["txtgender"] == "Male")
   {
-      echo "You are a Male<br/>";
+  echo "You are a Male<br/>";
   }
   else
   {
-      echo "You are a Female<br/>";
+  echo "You are a Female<br/>";
   }
 ?>
