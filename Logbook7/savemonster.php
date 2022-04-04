@@ -15,9 +15,11 @@ $audio = $_FILES['monsteraudio']['tmp_name'];
   $imagedata = addslashes(fread(fopen($image, "r"), filesize($image)));
   $audiodata = addslashes(fread(fopen($audio, "r"), filesize($audio)));
    
+  $name = $_POST['txtname'];
+
   $sql = "INSERT INTO monster";
-  $sql .= "(name, image, audio) ";
-  $sql .= "VALUES ('$_POST[txtname]', '$imagedata','$audiodata');";
+  $sql .= "(Name, Image, Audio) ";
+  $sql .= "VALUES ('$name', '$imagedata','$audiodata');";
 
   $result = mysqli_query($connect,$sql);
 
