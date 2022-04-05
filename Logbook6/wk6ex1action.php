@@ -43,3 +43,4 @@
     {
         echo "Error when fetching the data.";
     }
+?>
